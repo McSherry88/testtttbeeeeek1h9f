@@ -27,9 +27,11 @@
                     look-at="[gps-camera]"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
-                    scale="2 2 2"
+                    scale="1 1 1"
                     gps-entity-place="latitude: 40.1039954; longitude: -74.2296598;"
-                    light="type: ambient; intensity: 0.5;">
+                    <a-light type="directional" position="0 0 0" rotation="-90 0 0" target="#directionaltarget">
+  <a-entity id="directionaltarget" position="0 0 -1"></a-entity>
+</a-light>">
                 ></a-entity>
 
             <a-camera gps-camera rotation-reader></a-camera>
