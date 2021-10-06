@@ -28,12 +28,13 @@
                 <a-entity
                     look-at="[gps-camera]"
                     animation-mixer="loop: repeat"
+                          light="type: spot; angle: 45"
                     gltf-model="#animated-asset"
                     scale="0.5 0.5 0.5"
                     gps-entity-place="latitude: 40.1039954; longitude: -74.2296598;"
                  ></a-entity>
             
-<a-entity light="type: spot; angle: 45"></a-entity>
+
             
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
